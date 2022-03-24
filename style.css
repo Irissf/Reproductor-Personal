@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+:root{
+    --color-primario:#e2d8cf;
+    --color-secundario:#beb7a4;
+    --color-texto:#332f25;
+    --color-foco:#f5f1ea;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+    background-color: var(--color-primario);
+    accent-color: var(--color-secundario);
+    color: var(--color-texto);
+}
+
+.container{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.titulo{
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+img{
+    width: 300px;
+    border-radius: 5px;
+}
+
+.barra{
+    width: 300px;
+    cursor: pointer;
+}
+
+p{
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* El imputo filo lo ocultaremos tras el div, para poder personalizarlo, ya que de por si
+no se puede poner bonito de forma facil */
+.formulario{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.input--texto{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.input--delante{
+    position: relative;
+    width: 300px;
+    height: 30px;
+    background-color: var(--color-secundario);
+}
+.input{
+    position: absolute;
+
+    /* para que se ajuste al 100% */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.cancion{
+    margin-bottom: 10px;
+    cursor: pointer;
+}

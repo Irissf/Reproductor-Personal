@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+
+        <!-- imagen -->
+        <img src="https://i.pinimg.com/564x/23/d6/81/23d6810a67bcaf2bf1b4521250ee84cc.jpg" alt="imagen">
+
+        <!-- Nombre cancion -->
+        <p class="titulo">Canción</p>
+
+        <!-- barra -->
+        <progress id="file" class="barra" max="100" value="0"></progress>
+        <p>00:00</p>
+
+        <!-- botones -->
+        <div class="botones">
+            <button>a</button>
+            <button>a</button>
+            <button>a</button>
+            <button>a</button>
+            <button>a</button>
+        </div>
+
+        <form action="" class="formulario">
+            <div class="input--delante">
+                <p class="input--texto">Seleccionar canciones</p>
+                <input type="file" class="input"  multiple="true" accept=".mp3"/> 
+            </div>
+        </form>
+        <ul class="canciones--lista">
+
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
